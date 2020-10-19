@@ -28,7 +28,6 @@ Future libraries
 
 # Wireframes
 
-https://drive.google.com/file/d/1oRdW1Q9TCoR1VrkMzD2l4yvXoXYjaZmR/view?usp=sharing
 https://viewer.diagrams.net/?highlight=0000ff&edit=_blank&layers=1&nav=1&title=Untitled%20Diagram.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oRdW1Q9TCoR1VrkMzD2l4yvXoXYjaZmR%26export%3Ddownload
 
 
