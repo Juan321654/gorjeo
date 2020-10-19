@@ -63,12 +63,12 @@ src
 |  Component   |    Type    | State | Props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 |    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Logo.       | functional |   n   |   n   | _This component holds the Logo of the website application        |
+|  Logo       | functional |   n   |   n   | _This component holds the Logo of the website application_       |
 |   Footer     | functional |   y   |   n   | _This holds the copyright and portolio_                              |
 |    Login      | functional |   n   |   n   | _Login Component_.                      |
 |    UpdateArticle    | functional |   y   |   y   | _Holds update article functionality_      |
 |    App   | functional |   y   |   y   | _Holds the base of the code including routes_  |
-|    Create | functional |   y   |   y   | _Holds Create component.    |
+|    Create | functional |   y   |   y   | _Holds Create component._    |
 |    Main    | functional |   n   |   n   | _This is the home page._               |
 |    Register    | functional |   n   |   n   | _Registration area_               |
 |    Login    | functional |   n   |   n   | _Logn area_               |
