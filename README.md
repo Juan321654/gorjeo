@@ -106,6 +106,7 @@ ERD Model:
 
 # Post-MVP
 ```
+limited posts to show at the time. 
 
 ```
 # Code Showcase
