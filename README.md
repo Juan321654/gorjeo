@@ -30,7 +30,7 @@ Future libraries
 
 Mobile:  
 
-Desktop: [url=https://postimg.cc/LYLZkjVr][img]https://i.postimg.cc/LYLZkjVr/desktop-project-4.png[/img][/url]
+Desktop: <a href='https://postimg.cc/LYLZkjVr' target='_blank'><img src='https://i.postimg.cc/LYLZkjVr/desktop-project-4.png' border='0' alt='desktop-project-4'/></a>
 
 Tablet:  
 
