@@ -28,17 +28,7 @@ Future libraries
 
 # Wireframes
 
-Mobile:  
-<a href='https://postimg.cc/zyN89RKF' target='_blank'><img src='https://i.postimg.cc/zyN89RKF/desktop-project2-4.png' border='0' alt='desktop-project2-4'/></a>
-
-Desktop: 
-
-
-<a href='https://postimg.cc/LYLZkjVr' target='_blank'><img src='https://i.postimg.cc/LYLZkjVr/desktop-project-4.png' border='0' alt='desktop-project-4'/></a>
-
-Tablet:  
-
-<a href='https://postimg.cc/Mn331C6f' target='_blank'><img src='https://i.postimg.cc/Mn331C6f/desktop-project3-4.png' border='0' alt='desktop-project3-4'/></a>
+https://drive.google.com/file/d/1oRdW1Q9TCoR1VrkMzD2l4yvXoXYjaZmR/view?usp=sharing
 
 
 # Component Hierarchy
