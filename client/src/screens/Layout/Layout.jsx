@@ -11,10 +11,13 @@ export default function Layout() {
 
             <div className="li-l">
                 <li className="single-li-lay">New Post</li>
+
                 <Link to="/register">
                     <li className="single-li-lay">Register</li>
                 </Link>
-                <li className="single-li-lay">Log out</li>
+                <Link to="/login">
+                    <li className="single-li-lay">Log in</li>
+                </Link>
             </div>
         </div>
     )

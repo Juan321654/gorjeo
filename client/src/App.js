@@ -6,7 +6,8 @@ import { loginUser, registerUser, removeToken, verifyUser } from './services/aut
 import Layout from './screens/Layout/Layout';
 import Profile from './screens/Profile/Profile';
 import Posts from './screens/Posts/Posts';
-import SignUp from './screens/Signup/SignUp'
+import SignUp from './screens/Signup/SignUp';
+import Login from './screens/Login/Login';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -44,11 +45,18 @@ function App() {
         <Layout />
       </Route>
 
-      <Profile />
+      <Route exact path="/">
+        <Profile />
+      </Route>
 
       <Route path="/register">
-        <SignUp />
+        <SignUp handleRegister={handleRegister} />
       </Route>
+
+      <Route path="/login">
+        <Login />
+      </Route>
+
 
       {/* <Posts /> */}
 
