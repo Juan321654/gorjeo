@@ -1,0 +1,22 @@
+.big-cont-pro{
+    margin: 25px;
+    max-width: 30vw;
+    height: 183px;
+    padding: 14px 0;
+    background-color: #347fa8;
+    box-shadow: 0px 0px 0px 1px;
+    color:  #f4f3f2;
+    border-radius: 2px;
+}
+
+.head-cont-pro {
+    background-color: #f4f3f2;
+    height: 138px;
+    border: thin solid gray;
+    border-radius: 2px;
+}
+
+/* .mid-cont-pro{
+    background-color: #347fa8;
+    height: 45px;
+} */
