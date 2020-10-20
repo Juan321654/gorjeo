@@ -1,0 +1,29 @@
+.main-lay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: #7e8f91;
+    /* background-color: #122759; */
+    color: #f4f3f2;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: #f4f3f2;
+  }
+
+.li-l {
+    display: flex;
+    list-style-type: none;
+}
+
+.single-li-lay {
+    padding: 0 5px 0 5px;
+    color: #f4f3f2;
+}
