@@ -1,0 +1,32 @@
+.form-sign{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-sign{
+    padding: 10px;
+    /* width: 100px; */
+    /* justify-self: center; */
+}
+
+.p-sign{
+    text-align: left;
+    margin: 5px;
+}
+
+.label-sign{
+    padding: 0px 0px 8px 0px;
+}
+
+.border-cont-sign{
+    box-shadow: 0px 0px 3px -1px;
+    border-radius: 3px;
+    padding: 20px;
+}

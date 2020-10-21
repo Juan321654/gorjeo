@@ -20,43 +20,52 @@ export default function SignUp(props) {
     }
 
     return (
-        <form onSubmit={(e) => {
-            e.preventDefault();
-            handleRegister(formData);
-        }}>
-            <h3>Register</h3>
-            {
-                error &&
-                <p>{error}</p>
-            }
-            <label>
-                Username:
-            <input
-                    type="text"
-                    value={username}
-                    name="username"
-                    onChange={handleChange}
-                />
-            </label>
-            <label>
-                Email:
-            <input
-                    type="text"
-                    value={email}
-                    name="email"
-                    onChange={handleChange}
-                />
-            </label>
-            <label>
-                Password:
-            <input
-                    type="password"
-                    value={password}
-                    name="password"
-                    onChange={handleChange}
-                />
-            </label>
-            <button>Register</button>
-        </form>
+        <div className="container-sign">
+            <form
+                className="form-sign"
+                onSubmit={(e) => {
+                    e.preventDefault();
+                    handleRegister(formData);
+                }}>
+                <h3>Register</h3>
+                {
+                    error &&
+                    <p>{error}</p>
+                }
+                <div className="border-cont-sign">
+                    <label className="label-sign">
+                        <p className="p-sign">Username:</p>
+                        <input
+                            type="text"
+                            value={username}
+                            name="username"
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label className="label-sign">
+                        <p className="p-sign">Email:</p>
+                        <input
+                            type="text"
+                            value={email}
+                            name="email"
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label className="label-sign">
+                        <p className="p-sign">Password:</p>
+                        <input
+                            type="password"
+                            value={password}
+                            name="password"
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <div className="btn-sign">
+                        <button >Register</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
     )
 }
