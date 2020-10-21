@@ -54,11 +54,11 @@ function App() {
         <div className="ins-con-app">
           <Route exact path="/">
             <Posts />
+            <Comments />
           </Route>
         </div>
 
       </div>
-      <Comments />
 
       <Route path="/register">
         <SignUp handleRegister={handleRegister} />
