@@ -7,3 +7,14 @@
   background-color: #f4f3f2;
 }
 
+.cont-app {
+ /* background-color: royalblue; */
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+
+.ins-con-app{
+  /* background-color: red; */
+}
+
