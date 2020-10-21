@@ -1,0 +1,26 @@
+.container-login{
+    display: flex;
+    flex-direction: column;
+}
+
+.border1-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-login{
+    box-shadow: 0px 0px 3px -1px;
+    border-radius: 3px;
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-login{
+    text-align: left;
+    margin: 15px 0px 0px 0px;
+}

@@ -20,35 +20,43 @@ export default function Login(props) {
     }
 
     return (
-        <form onSubmit={(e) => {
-            e.preventDefault();
-            handleLogin(formData);
-        }}>
-            <h3>Login</h3>
-            {
-                error &&
-                <p>{error}</p>
-            }
-            <label>
-                Username:
-        <input
-                    type="text"
-                    value={username}
-                    name="username"
-                    onChange={handleChange}
-                />
-            </label>
-            <label>
-                Password:
-        <input
-                    type="password"
-                    value={password}
-                    name="password"
-                    onChange={handleChange}
-                />
-            </label>
-            <Link to='/register'>Register</Link>
-            <button>Login</button>
-        </form>
+        <div className="container-login">
+            <form
+                className="border1-login"
+                onSubmit={(e) => {
+                    e.preventDefault();
+                    handleLogin(formData);
+                }}>
+                <h3>Login</h3>
+                {
+                    error &&
+                    <p>{error}</p>
+                }
+                <div className="border-login">
+                    <label>
+                        <p className="p-login">Username:</p>
+                        <input
+                            type="text"
+                            value={username}
+                            name="username"
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <label>
+                        <p className="p-login">Password:</p>
+                        <input
+                            type="password"
+                            value={password}
+                            name="password"
+                            onChange={handleChange}
+                        />
+                    </label>
+                    <Link to='/register'>Register</Link>
+                    <div>
+                        <button>Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     )
 }
