@@ -43,7 +43,8 @@ function App() {
   return (
     <div className="App">
       <Route path="/">
-        <Layout />
+        {console.log(currentUser)}
+        <Layout currentUser={currentUser} handleLogout={handleLogout} />
       </Route>
       <div className="cont-app">
 
