@@ -16,6 +16,7 @@ export default function Posts() {
                         // onChange={handleChange}
                         />
                     </label>
+                    <button className="btn-post">post</button>
                 </form>
             </div>
         </div>

@@ -46,12 +46,17 @@ function App() {
       </Route>
 
       <div className="cont-app">
+
         <Route exact path="/">
           <Profile />
         </Route>
+
         <div className="ins-con-app">
-          <Route component={Posts} />
+          <Route exact path="/">
+            <Posts />
+          </Route>
         </div>
+
       </div>
 
       <Route path="/register">
