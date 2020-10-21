@@ -16,7 +16,35 @@
     border: 1px solid #c1c0c0;
 }
 
-/* .mid-cont-pro{
-    background-color: #347fa8;
-    height: 45px;
-} */
+.li-pro{
+    list-style-type: none;
+    font-size: small;
+    padding: 5px 9px 0px 9px;
+}
+
+.li2-pro{
+    list-style-type: none;
+    font-size: small;
+    /* justify-content: space-between; */
+}
+.mid-cont-pro{
+    display: flex;
+}
+
+.mid2-cont-pro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1px 38px 0px 23px;
+}
+
+.name-pro{
+    color: black;
+    list-style-type: none;
+    font-size: small;
+    padding: 2px;
+}
+
+.prof-pro{
+    /* padding: 5px; */
+}

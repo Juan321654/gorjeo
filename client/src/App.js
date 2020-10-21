@@ -8,6 +8,7 @@ import Profile from './screens/Profile/Profile';
 import Posts from './screens/Posts/Posts';
 import SignUp from './screens/Signup/SignUp';
 import Login from './screens/Login/Login';
+import Comments from './screens/Comments/Comments';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -44,7 +45,6 @@ function App() {
       <Route path="/">
         <Layout />
       </Route>
-
       <div className="cont-app">
 
         <Route exact path="/">
@@ -58,6 +58,7 @@ function App() {
         </div>
 
       </div>
+      <Comments />
 
       <Route path="/register">
         <SignUp handleRegister={handleRegister} />
