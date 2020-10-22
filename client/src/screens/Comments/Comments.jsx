@@ -5,7 +5,7 @@ export default function Comments() {
     return (
         <div className="main-con-comm">
             <div className="header-comm">
-                <img src="https://www.pngkit.com/png/detail/281-2812821_user-account-management-logo-user-icon-png.png" width="50px" height="40px" />
+                <img src="https://www.pngkit.com/png/detail/281-2812821_user-account-management-logo-user-icon-png.png" width="50px" height="40px" alt="userIcon" />
                 <p className="p-comm">Juan Camacho</p>
                 <p className="p2-comm">Software Engineer</p>
             </div>

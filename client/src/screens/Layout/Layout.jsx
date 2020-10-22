@@ -3,6 +3,7 @@ import './Layout.css';
 import { Link } from 'react-router-dom'
 
 export default function Layout(props) {
+    const { currentUser, handleLogout } = props
     return (
         <div className="main-lay">
             <Link to="/">
@@ -10,13 +11,17 @@ export default function Layout(props) {
             </Link>
 
             <div className="li-l">
-                {props.currentUser ? <li className="single-li-lay">New Post</li> : null}
+                {currentUser
+                    ? null
+                    : null}
 
                 <Link to="/register">
-                    {props.currentUser ? <li className="single-li-lay">Name</li> : <li className="single-li-lay">Register</li>}
+                    {currentUser
+                        ? <Link to="/"> <li className="single-li-lay">{props.currentUserName}</li></Link>
+                        : <li className="single-li-lay">Register</li>}
                 </Link>
-                {props.currentUser ?
-                    <Link to="/login" onClick={props.handleLogout}> <li className="single-li-lay">Log out</li></Link>
+                {currentUser
+                    ? <Link to="/login" onClick={handleLogout}> <li className="single-li-lay">Log out</li></Link>
                     : <Link to="/login"><li className="single-li-lay">Log in</li></Link>
                 }
             </div>

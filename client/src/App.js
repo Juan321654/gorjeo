@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Route, useHistory } from 'react-router-dom';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
+import { getPosts } from './services/post';
 //screens
 import Layout from './screens/Layout/Layout';
 import Profile from './screens/Profile/Profile';
@@ -11,7 +12,7 @@ import Login from './screens/Login/Login';
 import Comments from './screens/Comments/Comments';
 
 function App() {
-  const [currentUser, setCurrentUser] = useState(null);
+  const [currentUser, setCurrentUser] = useState({});
   const history = useHistory();
 
   useEffect(() => {
@@ -20,7 +21,13 @@ function App() {
       setCurrentUser(userData)
     }
     handleVerify();
+    // getPosts();
   }, [])
+
+  const getPostFromUser = async () => {
+    const userPost = await getPosts();
+    setCurrentUser(userPost);
+  }
 
   const handleLogin = async (loginData) => {
     const userData = await loginUser(loginData);
@@ -43,8 +50,12 @@ function App() {
   return (
     <div className="App">
       <Route path="/">
-        {console.log(currentUser)}
-        <Layout currentUser={currentUser} handleLogout={handleLogout} />
+        {/* {console.log(currentUser.username)} */}
+        <Layout
+          currentUser={currentUser}
+          handleLogout={handleLogout}
+        // currentUserName={currentUser.username}
+        />
       </Route>
       <div className="cont-app">
 
@@ -54,7 +65,7 @@ function App() {
 
         <div className="ins-con-app">
           <Route exact path="/">
-            <Posts />
+            <Posts currentUser={currentUser} />
             <Comments />
           </Route>
         </div>
