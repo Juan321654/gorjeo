@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Route, useHistory } from 'react-router-dom';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
-import { getPosts, deletePost } from './services/post';
+import { getPosts } from './services/post';
 //screens
 import Layout from './screens/Layout/Layout';
 import Profile from './screens/Profile/Profile';
