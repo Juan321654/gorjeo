@@ -2,8 +2,8 @@ import api from './api-config'
 
 // const baseUrl = 'http://localhost:3000/posts'
 
-export const getPosts = async () => {
-    const resp = await api.get('/posts')
+export const getPosts = async (id) => {
+    const resp = await api.get(`/posts/${id}`)
     console.log(resp.data[0].content)
     return resp.data
 }
@@ -13,9 +13,12 @@ export const createPost = async () => {
     return resp.data
 }
 
-// export const getPost = async () => {
-//     const resp = baseUrl
-//     console.log(resp)
-// }
-
-// console.log(getPost())
+export const deletePost = async id => {
+    try {
+        const response = await api.delete(`/products/${id}`)
+        // const response = await api.delete(`/products`)
+        return response.data
+    } catch (error) {
+        throw error
+    }
+}

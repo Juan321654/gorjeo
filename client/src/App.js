@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Route, useHistory } from 'react-router-dom';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
-import { getPosts } from './services/post';
+import { getPosts, deletePost } from './services/post';
 //screens
 import Layout from './screens/Layout/Layout';
 import Profile from './screens/Profile/Profile';
@@ -24,9 +24,16 @@ function App() {
     getPosts();
   }, [])
 
+  // const deleteUserPost = async () => {
+  //   const postData = await deletePost();
+  //   setCurrentUser(postData)
+  //   history.push('/')
+  // }
+
   const getPostFromUser = async () => {
     const userPost = await getPosts();
     setCurrentUser(userPost);
+    history.push('/')
   }
 
   const handleLogin = async (loginData) => {
@@ -69,6 +76,8 @@ function App() {
             <Posts currentUser={currentUser} />
             <Comments
               currentUser={currentUser}
+              getPostFromUser={getPostFromUser}
+            // deleteUserPost={deleteUserPost}
             />
           </Route>
         </div>
