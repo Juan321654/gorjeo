@@ -16,8 +16,8 @@ export default function Comments(props) {
             </div>
             <hr className="hr-comm" />
             <div className="comment-comm">
-                {console.log(getPostFromUser(1))}
-                {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet purus id ipsum viverra, non hendrerit massa dapibus. Donec ipsum elit, porttitor a pellentesque non, pharetra eget est. Maecenas faucibus tincidunt sapien, id sollicitudin nisl feugiat sed. */}
+                {/* {console.log(getPostFromUser(0))} */}
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet purus id ipsum viverra, non hendrerit massa dapibus. Donec ipsum elit, porttitor a pellentesque non, pharetra eget est. Maecenas faucibus tincidunt sapien, id sollicitudin nisl feugiat sed.
             </div>
         </div>
     )
