@@ -51,11 +51,9 @@ function App() {
   return (
     <div className="App">
       <Route path="/">
-        {/* {console.log(currentUser.username)} */}
         <Layout
           currentUser={currentUser}
           handleLogout={handleLogout}
-        // currentUserName={currentUser.username}
         />
       </Route>
       <div className="cont-app">
@@ -63,7 +61,6 @@ function App() {
         <Route exact path="/">
           <Profile
             currentUser={currentUser}
-          // currentUserName={currentUser.username}
           />
         </Route>
 
@@ -72,7 +69,6 @@ function App() {
             <Posts currentUser={currentUser} />
             <Comments
               currentUser={currentUser}
-            // currentUserName={currentUser.username}
             />
           </Route>
         </div>
