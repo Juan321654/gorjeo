@@ -4,10 +4,14 @@ import api from './api-config'
 
 export const getPosts = async () => {
     const resp = await api.get('/posts')
-    console.log(resp)
+    // console.log(resp)
     return resp.data
 }
 
+export const createPost = async () => {
+    const resp = await api.post('/posts')
+    return resp.data
+}
 
 // export const getPost = async () => {
 //     const resp = baseUrl
