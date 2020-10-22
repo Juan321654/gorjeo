@@ -5,7 +5,8 @@ import './Posts.css';
 export default function Posts(props) {
     const { currentUser } = props
     const [userInput, setUserInput] = useState({
-        userText: ""
+        content: "",
+        title: ""
     })
 
     function handleChange(evt) {
@@ -16,9 +17,8 @@ export default function Posts(props) {
         });
     }
 
-    const handleSubmit = async (event) => {
-        event.preventDefault();
-        const created = await createPost(userInput);
+    const handleSubmit = async (formData) => {
+        const created = await createPost(formData);
         setUserInput({ created });
     }
 
@@ -28,12 +28,22 @@ export default function Posts(props) {
             {currentUser
                 ? <div className="cont-post">
                     <div className="cont2-post">
-                        <form >
+                        <form onSubmit={(e) => {
+                            e.preventDefault();
+                            handleSubmit(userInput)
+                        }}>
+                            <input
+                                type="text"
+                                value={userInput.title}
+                                name="title"
+                                placeholder="Write a title"
+                                onChange={handleChange}
+                            ></input>
                             <label>
                                 <textarea
                                     type="text"
-                                    value={userInput.userText}
-                                    name="userText"
+                                    value={userInput.content}
+                                    name="content"
                                     className="form-post"
                                     placeholder="Write something"
                                     onChange={handleChange}
@@ -41,7 +51,6 @@ export default function Posts(props) {
                             </label>
                             <button
                                 className="btn-post"
-                                onSubmit={handleSubmit}
                             >post</button>
                         </form>
                     </div>
