@@ -21,7 +21,7 @@ function App() {
       setCurrentUser(userData)
     }
     handleVerify();
-    // getPosts();
+    getPosts();
   }, [])
 
   const getPostFromUser = async () => {
@@ -60,13 +60,19 @@ function App() {
       <div className="cont-app">
 
         <Route exact path="/">
-          <Profile />
+          <Profile
+            currentUser={currentUser}
+          // currentUserName={currentUser.username}
+          />
         </Route>
 
         <div className="ins-con-app">
           <Route exact path="/">
             <Posts currentUser={currentUser} />
-            <Comments />
+            <Comments
+              currentUser={currentUser}
+            // currentUserName={currentUser.username}
+            />
           </Route>
         </div>
 
