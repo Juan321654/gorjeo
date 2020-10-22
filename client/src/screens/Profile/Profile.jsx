@@ -2,7 +2,7 @@ import React from 'react'
 import './Profile.css'
 
 export default function Profile(props) {
-    const { currentUser, currentUserName } = props
+    const { currentUser } = props
     return (
         <div className="big-cont-pro">
             Profile
@@ -13,7 +13,7 @@ export default function Profile(props) {
                 <div>
                     {
                         currentUser
-                            ? <li className="name-pro">{currentUserName}</li>
+                            ? <li className="name-pro">{currentUser.username}</li>
                             : <li className="name-pro">Your name</li>
                     }
                     <li className="name-pro">Software Engineer</li>
