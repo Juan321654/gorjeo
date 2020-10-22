@@ -1,4 +1,5 @@
 import React from 'react'
+import { getPosts } from '../../services/post'
 import './Comments.css'
 
 export default function Comments(props) {
@@ -16,7 +17,8 @@ export default function Comments(props) {
             </div>
             <hr className="hr-comm" />
             <div className="comment-comm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet purus id ipsum viverra, non hendrerit massa dapibus. Donec ipsum elit, porttitor a pellentesque non, pharetra eget est. Maecenas faucibus tincidunt sapien, id sollicitudin nisl feugiat sed.
+                {console.log(getPosts)}
+                {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi laoreet purus id ipsum viverra, non hendrerit massa dapibus. Donec ipsum elit, porttitor a pellentesque non, pharetra eget est. Maecenas faucibus tincidunt sapien, id sollicitudin nisl feugiat sed. */}
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ import api from './api-config'
 
 export const getPosts = async () => {
     const resp = await api.get('/posts')
-    // console.log(resp)
+    console.log(resp.data[0].content)
     return resp.data
 }
 
