@@ -16,7 +16,7 @@ export default function Profile(props) {
                             ? <li className="name-pro">{currentUser.username}</li>
                             : <li className="name-pro">Your name</li>
                     }
-                    <li className="name-pro">Software Engineer</li>
+                    {/* <li className="name-pro">Software Engineer</li> */}
                 </div>
             </div>
             <div className="mid-cont-pro">

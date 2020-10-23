@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import { getTags } from '../../services/post';
-import './CreatePost.css';
+import { useParams } from 'react-router-dom';
 
-export default function CreatePost(props) {
-  const { currentUser, handlePostCreate } = props
+export default function EditPost(props) {
+  const { currentUser, posts, handleUpdate } = props
   const [userInput, setUserInput] = useState({
     title: "",
     content: "",
@@ -20,6 +20,19 @@ export default function CreatePost(props) {
     fetchTags()
   }, [])
 
+  const { id } = useParams();
+
+  useEffect(() => {
+    const prefillData = () => {
+      const postData = posts.find(post => post.id === parseInt(id))
+      const { title, content, tag_id } = postData
+      setUserInput({ title, content, tag_id })
+    }
+    if (posts.length) {
+      prefillData()
+    }
+  }, [posts, id])
+
   function handleChange(evt) {
     const { value, name } = evt.target
     setUserInput(prevState => ({
@@ -27,8 +40,8 @@ export default function CreatePost(props) {
       [name]: value
     }));
   }
-
   return (
+
     <div>
       {currentUser
         ? <div className="cont-post">
@@ -36,7 +49,7 @@ export default function CreatePost(props) {
             {/* {console.log(currentUser)} */}
             <form onSubmit={(e) => {
               e.preventDefault();
-              handlePostCreate(userInput)
+              handleUpdate(id, userInput)
             }}>
               <input
                 type="text"

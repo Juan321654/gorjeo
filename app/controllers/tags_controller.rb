@@ -1,6 +1,6 @@
 class TagsController < ApplicationController
   def index
-    @tags = Tags.all
+    @tags = Tag.all
 
     render json: @tags
   end

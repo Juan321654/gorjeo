@@ -1,9 +1,8 @@
-# Overview
 # Gorjeo
-With this application you can post your blogs, yours ideas and feelings.
+With this application you can post your blogs, yours ideas and feelings, and will be private for you. it will be your personal online dairy, noone will see this yours posts but you.
 
 ## Deployed Site:
-future link.
+https://gorjeo.netlify.app
 
 # MVP
 1. Use Ruby on Rails exposing Restful JSON endpoints.
