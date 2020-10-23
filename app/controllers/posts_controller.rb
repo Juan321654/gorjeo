@@ -1,10 +1,10 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :update, :destroy]
-  # before_action :authorize_request, only: [:create, :update, :destroy]
+  before_action :authorize_request
 
   # GET /posts
   def index
-    @posts = Post.all
+    @posts = @current_user.posts
 
     render json: @posts, include: [:tag, :user]
   end
@@ -17,7 +17,7 @@ class PostsController < ApplicationController
   # POST /posts
   def create
     @post = Post.new(post_params)
-    # @post.user = @current_user
+    @post.user = @current_user
 
     if @post.save
       render json: @post, include: [:tag, :user], status: :created

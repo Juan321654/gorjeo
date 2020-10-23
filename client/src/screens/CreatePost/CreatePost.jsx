@@ -1,29 +1,23 @@
 import React, { useState } from 'react';
-import { createPost } from '../../services/post'
 import './CreatePost.css';
 
 export default function CreatePost(props) {
-    const { currentUser } = props
+    const { currentUser, handlePostCreate } = props
     const [userInput, setUserInput] = useState({
         title: "",
         content: "",
         tag_id: 1,
-        user_id: currentUser && currentUser.id
     })
 
     function handleChange(evt) {
-        const value = evt.target.value;
-        setUserInput({
-            ...userInput,
-            [evt.target.name]: value
-        });
+        const { value, name } = evt.target
+        setUserInput(prevState => ({
+            ...prevState,
+            [name]: value
+        }));
     }
 
-    const handleSubmit = async (formData) => {
-        console.log(formData)
-        const created = await createPost(formData);
-        setUserInput({ created });
-    }
+
 
 
     return (
@@ -34,7 +28,7 @@ export default function CreatePost(props) {
                         {/* {console.log(currentUser)} */}
                         <form onSubmit={(e) => {
                             e.preventDefault();
-                            handleSubmit(userInput)
+                            handlePostCreate(userInput)
                         }}>
                             <input
                                 type="text"
