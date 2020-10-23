@@ -6,10 +6,10 @@ import { getPosts } from './services/post';
 //screens
 import Layout from './screens/Layout/Layout';
 import Profile from './screens/Profile/Profile';
-import Posts from './screens/Posts/Posts';
+import CreatePost from './screens/CreatePost/CreatePost';
 import SignUp from './screens/Signup/SignUp';
 import Login from './screens/Login/Login';
-import Comments from './screens/Comments/Comments';
+import Posts from './screens/Posts/Posts';
 
 function App() {
   const [currentUser, setCurrentUser] = useState({});
@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     const handleVerify = async () => {
       const userData = await verifyUser();
-      console.log(userData)
+      // console.log(userData)
       setCurrentUser(userData)
     }
     handleVerify();
@@ -32,11 +32,7 @@ function App() {
   //   history.push('/')
   // }
 
-  const getPostFromUser = async () => {
-    const userPost = await getPosts();
-    setPost(userPost);
-    history.push('/')
-  }
+
 
   const handleLogin = async (loginData) => {
     const userData = await loginUser(loginData);
@@ -78,10 +74,9 @@ function App() {
 
         <div className="ins-con-app">
           <Route exact path="/">
-            <Posts currentUser={currentUser} />
-            <Comments
+            <CreatePost currentUser={currentUser} />
+            <Posts
               currentUser={currentUser}
-              getPostFromUser={getPostFromUser}
             // deleteUserPost={deleteUserPost}
             />
           </Route>

@@ -5,7 +5,7 @@ import api from './api-config'
 export const getPosts = async (id) => {
     // const resp = await api.get(`/posts/${id}`)
     const resp = await api.get(`/posts`)
-    console.log(resp.data)
+    // console.log(resp.data)
     return resp.data
 }
 
