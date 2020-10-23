@@ -13,18 +13,15 @@ import Posts from './screens/Posts/Posts';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
-  // const [allPosts, setAllPosts] = useState([]);
   const [posts, setPosts] = useState([]);
   const history = useHistory();
 
   useEffect(() => {
     const handleVerify = async () => {
       const userData = await verifyUser();
-      // console.log(userData)
       setCurrentUser(userData)
     }
     handleVerify();
-    // getPosts();
   }, [])
 
   useEffect(() => {
@@ -43,16 +40,6 @@ function App() {
   //   setCurrentUser(postData)
   //   history.push('/')
   // }
-
-  // useEffect(() => {
-  //   const getPostFromUser = async () => {
-  //     const resp = await getPosts();
-  //     console.log(resp)
-  //     setAllPosts(resp);
-
-  //   }
-  //   getPostFromUser()
-  // }, [])
 
   const handlePostCreate = async (formData) => {
     const created = await createPost(formData);
@@ -87,7 +74,6 @@ function App() {
         />
       </Route>
 
-
       <div className="cont-app">
         <Route exact path="/">
           <Profile
@@ -103,8 +89,6 @@ function App() {
             <Posts
               currentUser={currentUser}
               posts={posts}
-            // allPosts={allPosts}
-            // deleteUserPost={deleteUserPost}
             />
           </Route>
         </div>
@@ -117,8 +101,6 @@ function App() {
       <Route path="/login">
         <Login handleLogin={handleLogin} />
       </Route>
-
-
     </div>
   );
 }

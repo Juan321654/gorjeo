@@ -17,9 +17,6 @@ export default function CreatePost(props) {
         }));
     }
 
-
-
-
     return (
         <div>
             {currentUser
