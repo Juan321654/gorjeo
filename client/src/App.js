@@ -13,7 +13,8 @@ import Posts from './screens/Posts/Posts';
 
 function App() {
   const [currentUser, setCurrentUser] = useState({});
-  const [post, setPost] = useState({});
+  // const [allPosts, setAllPosts] = useState([]);
+  // const [post, setPost] = useState({});
   const history = useHistory();
 
   useEffect(() => {
@@ -31,6 +32,16 @@ function App() {
   //   setCurrentUser(postData)
   //   history.push('/')
   // }
+
+  // useEffect(() => {
+  //   const getPostFromUser = async () => {
+  //     const resp = await getPosts();
+  //     console.log(resp)
+  //     setAllPosts(resp);
+
+  //   }
+  //   getPostFromUser()
+  // }, [])
 
 
 
@@ -77,6 +88,7 @@ function App() {
             <CreatePost currentUser={currentUser} />
             <Posts
               currentUser={currentUser}
+            // allPosts={allPosts}
             // deleteUserPost={deleteUserPost}
             />
           </Route>
