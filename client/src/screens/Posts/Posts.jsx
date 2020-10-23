@@ -31,7 +31,7 @@ export default function Posts(props) {
             {currentUser
                 ? <div className="cont-post">
                     <div className="cont2-post">
-                        {console.log(currentUser)}
+                        {/* {console.log(currentUser)} */}
                         <form onSubmit={(e) => {
                             e.preventDefault();
                             handleSubmit(userInput)
