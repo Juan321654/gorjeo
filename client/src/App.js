@@ -64,7 +64,10 @@ function App() {
           currentUser={currentUser}
           handleLogout={handleLogout}
         />
+
       </Route>
+
+
       <div className="cont-app">
 
         <Route exact path="/">
@@ -74,7 +77,7 @@ function App() {
         </Route>
 
         <div className="ins-con-app">
-          <Route exact path="/posts">
+          <Route exact path="/">
             <Posts currentUser={currentUser} />
             <Comments
               currentUser={currentUser}
