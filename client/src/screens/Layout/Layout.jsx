@@ -15,7 +15,7 @@ export default function Layout(props) {
 
                 <Link to="/register">
                     {currentUser
-                        ? <Link to="/"> <li className="single-li-lay">{currentUser.username}</li></Link>
+                        ? <li className="single-li-lay">{currentUser.username}</li>
                         : <li className="single-li-lay">Register</li>}
                 </Link>
                 {currentUser

@@ -13,11 +13,13 @@ import Comments from './screens/Comments/Comments';
 
 function App() {
   const [currentUser, setCurrentUser] = useState({});
+  const [post, setPost] = useState({});
   const history = useHistory();
 
   useEffect(() => {
     const handleVerify = async () => {
       const userData = await verifyUser();
+      console.log(userData)
       setCurrentUser(userData)
     }
     handleVerify();
@@ -32,7 +34,7 @@ function App() {
 
   const getPostFromUser = async () => {
     const userPost = await getPosts();
-    setCurrentUser(userPost);
+    setPost(userPost);
     history.push('/')
   }
 
@@ -72,7 +74,7 @@ function App() {
         </Route>
 
         <div className="ins-con-app">
-          <Route exact path="/">
+          <Route exact path="/posts">
             <Posts currentUser={currentUser} />
             <Comments
               currentUser={currentUser}

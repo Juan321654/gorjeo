@@ -19,5 +19,5 @@ puts "users #{User.count} created"
 @tag3 = Tag.create!(name: 'music')
 puts "tags #{Tag.count} created"
 
-@post1 = Post.create!(title: 'woo', content: 'had fun', tag:@tag2, user:@user)
+@post1 = Post.create!(title: 'woo', content: 'had fun', tag_id:1, user_id:1)
 puts "posts #{Post.count} created"

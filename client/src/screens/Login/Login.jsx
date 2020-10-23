@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import './Login.css';
 
 export default function Login(props) {
@@ -9,7 +9,7 @@ export default function Login(props) {
     })
     const { username, password } = formData;
     const { error, handleLogin } = props;
-
+    const history = useHistory();
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -26,6 +26,7 @@ export default function Login(props) {
                 onSubmit={(e) => {
                     e.preventDefault();
                     handleLogin(formData);
+                    history.push('/posts')
                 }}>
                 <h3>Login</h3>
                 {
@@ -53,7 +54,7 @@ export default function Login(props) {
                     </label>
                     <Link to='/register'>Register</Link>
                     <div>
-                        <button>Login</button>
+                        <input type="submit" value="Login" />
                     </div>
                 </div>
             </form>

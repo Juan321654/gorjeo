@@ -5,8 +5,10 @@ import './Posts.css';
 export default function Posts(props) {
     const { currentUser } = props
     const [userInput, setUserInput] = useState({
+        title: "",
         content: "",
-        title: ""
+        tag_id: 1,
+        user_id: currentUser && currentUser.id
     })
 
     function handleChange(evt) {
@@ -18,6 +20,7 @@ export default function Posts(props) {
     }
 
     const handleSubmit = async (formData) => {
+        console.log(formData)
         const created = await createPost(formData);
         setUserInput({ created });
     }
@@ -28,6 +31,7 @@ export default function Posts(props) {
             {currentUser
                 ? <div className="cont-post">
                     <div className="cont2-post">
+                        {console.log(currentUser)}
                         <form onSubmit={(e) => {
                             e.preventDefault();
                             handleSubmit(userInput)
@@ -49,6 +53,11 @@ export default function Posts(props) {
                                     onChange={handleChange}
                                 />
                             </label>
+                            {/* <select>
+                                <option value="1">Games</option>
+                                <option value="2">Travel</option>
+                                <option value="3">Music</option>
+                            </select> */}
                             <button
                                 className="btn-post"
                             >post</button>
