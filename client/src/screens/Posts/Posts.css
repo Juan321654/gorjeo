@@ -58,6 +58,10 @@
     flex-direction: row;
 }
 
+.p-title-posts{
+    margin: 25px 0px 0px 0px;
+}
+
 @media only screen and (max-width: 375px) {
     .main-con-comm{
         background-color: #f2f2f2;

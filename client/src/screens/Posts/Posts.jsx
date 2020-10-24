@@ -25,6 +25,9 @@ export default function Posts(props) {
                   <img src="https://www.pngkit.com/png/detail/281-2812821_user-account-management-logo-user-icon-png.png" width="50px" height="40px" alt="userIcon" />
                   <p className="p-comm">{currentUser.username}</p>
                 </div>
+                <div>
+                  <p className="p-title-posts">Title: {post.title}</p>
+                </div>
                 <div className="post-tag-posts">
                   <p>#{post.tag.name}</p>
                 </div>
