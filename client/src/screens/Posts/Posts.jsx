@@ -34,7 +34,6 @@ export default function Posts(props) {
                   <p>#{post.tag.name}</p>
                 </div>
               </div>
-              {/* <hr className="hr-comm" /> */}
               <div className="comment-comm">
                 {post.content}
               </div>
