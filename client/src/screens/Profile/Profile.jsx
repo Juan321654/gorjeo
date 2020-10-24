@@ -8,7 +8,7 @@ export default function Profile(props) {
     <div className="big-cont-pro">
       Profile
       <div className="head-cont-pro">
-        <img src="https://www.pngkit.com/png/detail/281-2812821_user-account-management-logo-user-icon-png.png" width="110px" height="90px" alt="userIcon" />
+        <img className="profilepic-profile" src="https://www.pngkit.com/png/detail/281-2812821_user-account-management-logo-user-icon-png.png" width="110px" height="90px" alt="userIcon" />
         <div>
           {
             currentUser

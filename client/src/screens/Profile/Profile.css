@@ -41,9 +41,13 @@
     color: black;
     list-style-type: none;
     font-size: small;
-    padding: 2px;
+    margin: -6px 0px 0px 0px;
 }
 
 .title-form-create-post{
     margin: 0px 0px 10px 0px;
+}
+
+.profilepic-profile{
+    margin: 9px;
 }
