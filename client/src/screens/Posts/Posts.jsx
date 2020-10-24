@@ -27,7 +27,7 @@ export default function Posts(props) {
               </div>
               <div className="header-comm">
                 <div className="header-inner-comm">
-                  <img src="https://www.pngkit.com/png/detail/281-2812821_user-account-management-logo-user-icon-png.png" width="50px" height="40px" alt="userIcon" />
+                  <img src="https://www.pngkit.com/png/detail/281-2812821_user-account-management-logo-user-icon-png.png" width="50px" height="40px" alt="userIcon" className="img-post" />
                   <p className="p-comm">{currentUser.username}</p>
                 </div>
                 <div>
@@ -37,7 +37,7 @@ export default function Posts(props) {
                   <p>#{post.tag.name}</p>
                 </div>
               </div>
-              <hr className="hr-comm" />
+              {/* <hr className="hr-comm" /> */}
               <div className="comment-comm">
                 {post.content}
               </div>
