@@ -4,6 +4,13 @@ import './Posts.css'
 //Icons
 import { RiDeleteBin2Line } from "react-icons/ri";
 import { GrEdit } from "react-icons/gr";
+import { FcNook } from "react-icons/fc";
+import { FcInspection } from "react-icons/fc";
+import { FcDeleteDatabase } from "react-icons/fc";
+import { TiDelete } from "react-icons/ti";
+
+
+
 
 export default function Posts(props) {
   const { currentUser, posts, handleDelete } = props
@@ -15,9 +22,11 @@ export default function Posts(props) {
           posts.map((post) => (
             <div className="main-con-comm" key={post.id}>
               <div className="delete-edit-btns-posts">
-                <RiDeleteBin2Line size="15px" onClick={() => handleDelete(post.id)}></RiDeleteBin2Line>
+                <TiDelete size="20px" color="white" onClick={() => handleDelete(post.id)}></TiDelete>
                 <div className="delete-edit-btns2-posts2">
-                  <Link to={`/posts/${post.id}/edit`}><GrEdit size="12px" /></Link>
+                  <Link to={`/posts/${post.id}/edit`}>
+                    <FcInspection color="white" size="18px" />
+                  </Link>
                 </div>
               </div>
               <div className="header-comm">
