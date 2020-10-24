@@ -31,16 +31,13 @@
     text-align: left;
 }
 
-.hr-comm{
-    /* padding: 5px; */
-    
-}
 
 .delete-edit-btns-posts{
     text-align: right;
     display: flex;
     flex-direction: row-reverse;
     margin: 0px 10px 0px 0px;
+    cursor: pointer;
 }
 
 .delete-edit-btns2-posts2{
