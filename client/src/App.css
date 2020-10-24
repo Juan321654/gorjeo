@@ -30,7 +30,6 @@
   
   @media only screen and (max-width: 940px ) and  (min-width: 376px){
     .cont-app {
-      /* background-color: red; */
       display: flex;
       flex-direction: column;
       justify-content: center;

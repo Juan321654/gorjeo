@@ -64,7 +64,7 @@
 }
 
 .p-title-posts{
-    margin: 25px 0px 0px 0px;
+    margin: 27px 0px 0px 0px;
 }
 
 .img-post{
@@ -75,7 +75,6 @@
 
 @media only screen and (max-width: 375px) {
     .main-con-comm{
-        background-color: #f2f2f2;
         width: 363px;
         padding: 6px 0px 0px 0px;
         margin: 25px 10px;
@@ -83,10 +82,6 @@
         border-radius: 3px;
         height: 211px;
         justify-content: space-between;
-    }
-
-    .main-cont-posts{
-        /* margin: 0px 0px 0px 60px; */
     }
 }
 

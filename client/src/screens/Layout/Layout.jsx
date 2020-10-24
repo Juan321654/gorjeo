@@ -10,9 +10,7 @@ export default function Layout(props) {
       <Link to="/">
         GorJeo
             </Link>
-
       <div className="li-l">
-
         <Link to="/register">
           {currentUser
             ? <li className="single-li-lay">{currentUser.username}</li>

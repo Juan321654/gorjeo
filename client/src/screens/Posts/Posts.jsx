@@ -5,9 +5,6 @@ import './Posts.css'
 import { FcInspection } from "react-icons/fc";
 import { TiDelete } from "react-icons/ti";
 
-
-
-
 export default function Posts(props) {
   const { currentUser, posts, handleDelete } = props
 

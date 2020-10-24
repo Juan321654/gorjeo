@@ -98,7 +98,3 @@ ERD Model:
 limited posts to show at the time. 
 
 ```
-# Code Showcase
-
-
-# Code Issues & Resolutions
