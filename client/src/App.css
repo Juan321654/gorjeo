@@ -9,13 +9,14 @@
 
 .cont-app {
  display: flex;
- flex-direction: column;
+ flex-direction: row;
  justify-content: center;
 }
 
 
 @media only screen and (max-width: 375px) {
   .cont-app {
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;

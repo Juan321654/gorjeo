@@ -9,7 +9,7 @@ export default function Posts(props) {
   const { currentUser, posts, handleDelete } = props
 
   return (
-    <div>
+    <div className="main-cont-posts">
       {
         posts.length ?
           posts.map((post) => (
