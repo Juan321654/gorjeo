@@ -1,5 +1,5 @@
 .main-con-comm{
-    background-color: #f2f2f2;
+    background-color: #347fa8;
     width: 664px;
     padding: 6px 0px 0px 0px;
     margin: 25px 10px;
@@ -29,6 +29,10 @@
 .comment-comm{
     margin: 0px 10px 10px 10px;
     text-align: left;
+    height: 138px;
+    border-radius: 4px;
+    background-color: #f4f3f2;
+    padding: 5px;
 }
 
 

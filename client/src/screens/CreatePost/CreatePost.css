@@ -5,7 +5,7 @@
 }
 
 .cont2-post{
-    background-color: #f2f2f2;
+    background-color: #347fa8;
     width: 600px;
     padding: 10px 32px 8px 32px;
     margin: 25px 10px;
@@ -30,7 +30,7 @@
 
 @media only screen and (max-width: 375px) {
     .cont2-post {
-        background-color: #f2f2f2;
+        background-color: #347fa8;
         width: 300px;
         padding: 10px 32px 8px 32px;
         margin: 25px 10px;
@@ -50,7 +50,7 @@
 
 @media only screen and (max-width: 940px ) and  (min-width: 376px){
     .cont2-post {
-        background-color: #f2f2f2;
+        background-color: #347fa8;
         width: 90vw;
         padding: 10px 0px 8px 0px;
         margin: 25px 10px;
