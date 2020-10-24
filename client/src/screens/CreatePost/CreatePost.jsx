@@ -29,7 +29,7 @@ export default function CreatePost(props) {
   }
 
   return (
-    <div>
+    <div className="main-cont-create-post">
       {currentUser
         ? <div className="cont-post">
           <div className="cont2-post">

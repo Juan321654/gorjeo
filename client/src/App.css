@@ -8,13 +8,18 @@
 }
 
 .cont-app {
- /* background-color: royalblue; */
  display: flex;
- flex-direction: row;
+ flex-direction: column;
  justify-content: center;
 }
 
-.ins-con-app{
-  /* background-color: red; */
+
+@media only screen and (max-width: 375px) {
+  .cont-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
 }
 
