@@ -28,7 +28,8 @@ export default function Posts(props) {
               <p>{post.tag.name}</p>
             </div>
           )) :
-          <h1>... Not Loading</h1>
+          <></>
+        // <h3>... No Posts to display</h3>
       }
     </div>
   )

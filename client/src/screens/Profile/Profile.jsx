@@ -3,6 +3,7 @@ import './Profile.css'
 
 export default function Profile(props) {
     const { currentUser } = props
+
     return (
         <div className="big-cont-pro">
             Profile
@@ -16,7 +17,6 @@ export default function Profile(props) {
                             ? <li className="name-pro">{currentUser.username}</li>
                             : <li className="name-pro">Your name</li>
                     }
-                    {/* <li className="name-pro">Software Engineer</li> */}
                 </div>
             </div>
             <div className="mid-cont-pro">
@@ -25,7 +25,7 @@ export default function Profile(props) {
                 <li className="li-pro">Followers</li>
             </div>
             <div className="mid2-cont-pro">
-                <li className="li2-pro">5</li>
+                <li className="li2-pro">0</li>
                 <li className="li2-pro">0</li>
                 <li className="li2-pro">0</li>
             </div>

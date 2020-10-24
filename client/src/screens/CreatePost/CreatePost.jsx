@@ -58,7 +58,7 @@ export default function CreatePost(props) {
               <select defaultValue="default" name="tag_id" onChange={handleChange}>
                 <option value="default" disabled>--Select a tag--</option>
                 {tags.map(tag => (
-                  <option value={tag.id}>{tag.name}</option>
+                  <option value={tag.id} key={tag.id}>{tag.name}</option>
                 ))}
               </select>
               <button
