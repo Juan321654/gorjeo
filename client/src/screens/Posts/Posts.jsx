@@ -2,11 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Posts.css'
 //Icons
-import { RiDeleteBin2Line } from "react-icons/ri";
-import { GrEdit } from "react-icons/gr";
-import { FcNook } from "react-icons/fc";
 import { FcInspection } from "react-icons/fc";
-import { FcDeleteDatabase } from "react-icons/fc";
 import { TiDelete } from "react-icons/ti";
 
 
