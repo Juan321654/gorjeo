@@ -6,13 +6,15 @@
     box-shadow: 0px 0px 3px -1px;
     border-radius: 3px;
     height: 211px;
+    justify-content: space-between;
 }
 
 .header-comm{
     display: flex;
     flex-direction: row;
     font-size: 10px;
-    margin: 0px 0px -15px 0px;
+    margin: -18px 0px -15px 0px;
+    justify-content: space-between;
 }
 
 .p-comm{
@@ -32,4 +34,29 @@
 .hr-comm{
     /* padding: 5px; */
     
+}
+
+.delete-edit-btns-posts{
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0px 10px 0px 0px;
+}
+
+.delete-edit-btns2-posts2{
+    margin: -2px 26px 0px 0px;
+}
+
+.post-tag-posts{
+    font-size: 10px;
+    margin: 16px 16px 0px 0px
+}
+
+.hr-tag-posts {
+    margin: 5px;
+}
+
+.header-inner-comm{
+    display: flex;
+    flex-direction: row;
 }

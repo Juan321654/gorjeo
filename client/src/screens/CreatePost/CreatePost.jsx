@@ -39,6 +39,7 @@ export default function CreatePost(props) {
               handlePostCreate(userInput)
             }}>
               <input
+                className="title-form-create-post"
                 type="text"
                 value={userInput.title}
                 name="title"
@@ -55,7 +56,12 @@ export default function CreatePost(props) {
                   onChange={handleChange}
                 />
               </label>
-              <select defaultValue="default" name="tag_id" onChange={handleChange}>
+              <select
+                className="drop-down-create-post"
+                defaultValue="default"
+                name="tag_id"
+                onChange={handleChange}
+              >
                 <option value="default" disabled>--Select a tag--</option>
                 {tags.map(tag => (
                   <option value={tag.id} key={tag.id}>{tag.name}</option>
