@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+  transition: ease all .5s;
+}
 
 .App {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   background-color: #f4f3f2;
+  transition: ease all .2s;
 }
 
 .cont-app {
@@ -22,5 +26,15 @@
     justify-content: center;
     align-items: center;
    }
-}
+  }
+  
+  @media only screen and (max-width: 940px ) and  (min-width: 376px){
+    .cont-app {
+      /* background-color: red; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     }
 
+}
