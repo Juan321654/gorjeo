@@ -1,5 +1,5 @@
 # Gorjeo
-With this application you can post your blogs, yours ideas and feelings, and will be private for you. it will be your personal online dairy, noone will see this yours posts but you.
+With this application you can post your blogs, yours ideas and feelings, and will be private for you. it will be your personal online diary, noone will see this yours posts but you.
 
 ## Deployed Site:
 https://gorjeo.netlify.app
